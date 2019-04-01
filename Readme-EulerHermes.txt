@@ -1,4 +1,4 @@
-https://github.com/nubytouch/EulerHermesResearch/edit/master/ReadMe.txt
+
 
 This is the code source for the old Euler Hermes Research Android application
 
@@ -13,7 +13,7 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 
 You should have received a copy of the GNU Affero General Public License along with this program. If not, see <http://www.gnu.org/licenses/>.
 
-For commercial licensing, including our code, please contact : contact@nubytouch.com.
+For commercial licensing, including our code, please contactÂ : contact@nubytouch.com.
 
 This code include some code from ARTIFEX software
 https://github.com/ArtifexSoftware/mupdf-android-viewer-old you cannot use ArtifexSoftware for commercial purpose see https://github.com/ArtifexSoftware/mupdf-android-viewer-old/blob/master/ReadMe.txt
