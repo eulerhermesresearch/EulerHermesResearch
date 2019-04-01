@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:paddingTop="@dimen/default_spacing_minor"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content">
+
+    <TextView
+            android:textColor="@color/main_blue"
+            android:paddingLeft="@dimen/default_spacing_minor"
+            android:paddingRight="@dimen/default_spacing_minor"
+            android:paddingBottom="@dimen/default_spacing_major"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/knowing_each_other_better"
+            style="?android:attr/textAppearanceLarge"/>
+
+    <ScrollView
+            android:scrollbarStyle="outsideOverlay"
+            android:paddingLeft="@dimen/default_spacing_major"
+            android:paddingRight="@dimen/default_spacing_major"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0">
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:text="@string/phone_number"
+                    style="@style/WizardFormLabel"/>
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/default_spacing_major"
+                    android:baselineAligned="false">
+
+                <EditText
+                        android:id="@+id/phone_prefix"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/phone_prefix"
+                        android:inputType="phone"
+                        android:imeOptions="actionNext"/>
+
+                <EditText
+                        android:id="@+id/phone"
+                        android:paddingLeft="@dimen/default_spacing_minor"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/phone_number"
+                        android:layout_weight="1.0"
+                        android:inputType="phone"
+                        android:imeOptions="actionNext"/>
+            </LinearLayout>
+
+            <TextView
+                    android:text="@string/employees_range"
+                    style="@style/WizardFormLabel"/>
+
+            <Spinner
+                    android:entries="@array/employees_range"
+                    android:id="@+id/employees"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/default_spacing_major"/>
+
+            <TextView
+                    android:text="@string/sales_range"
+                    style="@style/WizardFormLabel"/>
+
+            <Spinner
+                    android:entries="@array/sales_range"
+                    android:id="@+id/sales"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/default_spacing_major"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <ViewFlipper
+            android:id="@+id/view_flipper"
+            android:paddingTop="@dimen/dip_24"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+            <Button
+                    android:textColor="@android:color/white"
+                    android:id="@+id/cancel"
+                    android:background="@color/dark_grey_blue"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cancel"
+                    android:layout_weight="1.0"/>
+
+            <Button
+                    android:textColor="@android:color/white"
+                    android:id="@+id/send"
+                    android:background="@color/main_blue"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="@string/send"
+                    android:layout_weight="1.0"/>
+        </LinearLayout>
+
+        <ProgressBar
+                android:layout_gravity="center"
+                android:id="@android:id/progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+    </ViewFlipper>
+</LinearLayout>

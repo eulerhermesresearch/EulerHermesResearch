@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:app1="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+        >
+
+    <com.yabeman.android.extended.widget.TypefaceTextView
+            android:textSize="18.0sp"
+            android:textColor="@color/main_blue"
+            android:padding="@dimen/dip_8"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/our_products"
+            app1:fontFamily="Roboto-Medium"/>
+
+    <com.eulerhermes.research.widget.HomeDocCategory
+            android:id="@+id/category_eco_outlooks"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:title="@string/category_economic_outlooks"
+            app:borderColor="@color/darker_yellow"
+            app:image="@drawable/doc_category_1"/>
+
+    <com.eulerhermes.research.widget.HomeDocCategory
+            android:id="@+id/category_risks"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:title="@string/category_weekly_export_risk_outlooks"
+            app:borderColor="@color/darker_blue"
+            app:image="@drawable/doc_category_2"/>
+
+    <com.eulerhermes.research.widget.HomeDocCategory
+            android:id="@+id/category_country_reports"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:title="@string/category_country_reports"
+            app:borderColor="@color/dark_grey_blue"
+            app:image="@drawable/doc_category_3"/>
+
+    <com.eulerhermes.research.widget.HomeDocCategory
+            android:id="@+id/category_eco_insights"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:title="@string/category_economic_insights"
+            app:borderColor="@color/lighter_blue"
+            app:image="@drawable/doc_category_4"/>
+
+    <com.eulerhermes.research.widget.HomeDocCategory
+            android:id="@+id/category_industry_reports"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:title="@string/category_industry_reports"
+            app:borderColor="@color/light_red"
+            app:image="@drawable/doc_category_5"/>
+</LinearLayout>

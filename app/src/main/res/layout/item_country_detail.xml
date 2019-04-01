@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@android:color/white"
+              android:paddingLeft="@dimen/default_spacing_minor"
+              android:paddingRight="@dimen/default_spacing_minor"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content">
+
+    <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:minHeight="@dimen/dip_48">
+
+        <com.yabeman.android.extended.widget.TypefaceTextView
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:text="@string/payments"
+                android:layout_weight="1.0"
+                app:fontFamily="Roboto-Light"/>
+
+        <ImageView
+                android:id="@+id/payments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"/>
+    </LinearLayout>
+
+    <View
+            android:background="#ffcccccc"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"/>
+
+    <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:minHeight="@dimen/dip_48">
+
+        <com.yabeman.android.extended.widget.TypefaceTextView
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:text="@string/court_proceedings"
+                android:layout_weight="1.0"
+                app:fontFamily="Roboto-Light"/>
+
+        <ImageView
+                android:id="@+id/court_proceedings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"/>
+    </LinearLayout>
+
+    <View
+            android:background="#ffcccccc"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"/>
+
+    <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:minHeight="@dimen/dip_48">
+
+        <com.yabeman.android.extended.widget.TypefaceTextView
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:text="@string/insolvency_proceedings"
+                android:layout_weight="1.0"
+                app:fontFamily="Roboto-Light"/>
+
+        <ImageView
+                android:id="@+id/insolvency_proceedings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"/>
+    </LinearLayout>
+</LinearLayout>

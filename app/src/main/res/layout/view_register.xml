@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:paddingTop="@dimen/default_spacing_minor"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+    <GridLayout
+            android:paddingLeft="@dimen/default_spacing_minor"
+            android:paddingRight="@dimen/default_spacing_minor"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="1">
+
+        <EditText
+                android:id="@+id/first_name"
+                android:layout_width="fill_parent"
+                android:hint="@string/first_name"
+                android:inputType="textPersonName"
+                android:imeOptions="actionNext"/>
+
+        <EditText
+                android:id="@+id/last_name"
+                android:layout_width="fill_parent"
+                android:hint="@string/last_name"
+                android:inputType="textPersonName"
+                android:imeOptions="actionNext"/>
+
+        <EditText
+                android:id="@+id/email"
+                android:layout_width="fill_parent"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:imeActionLabel="@string/sign_up"/>
+
+        <Switch
+                android:textSize="12.0sp"
+                android:id="@+id/has_accepted_info"
+                android:paddingTop="@dimen/default_spacing_minor"
+                android:checked="true"
+                android:textOn="@string/yes"
+                android:textOff="@string/no"
+                android:text="@string/register_accept_receive_info"/>
+    </GridLayout>
+
+    <ViewFlipper
+            android:id="@+id/view_flipper"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+        <Button
+                android:textColor="@android:color/white"
+                android:id="@+id/register_button"
+                android:background="@color/main_red"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/register"/>
+
+        <ProgressBar
+                android:layout_gravity="center"
+                android:id="@android:id/progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+    </ViewFlipper>
+</RelativeLayout>

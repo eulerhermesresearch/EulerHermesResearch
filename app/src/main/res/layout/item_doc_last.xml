@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="100.0dip"
+              android:layout_height="wrap_content">
+
+    <ImageView
+            android:id="@+id/image"
+            android:layout_width="100.0dip"
+            android:layout_height="125.0dip"
+            android:scaleType="fitXY"/>
+
+    <com.yabeman.android.extended.widget.TypefaceTextView
+            android:textSize="12.0sp"
+            android:textStyle="bold"
+            android:textColor="?android:textColorSecondary"
+            android:ellipsize="end"
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:lines="2"
+            app:fontFamily="Roboto-Medium"/>
+
+    <com.yabeman.android.extended.widget.TypefaceTextView
+            android:textSize="10.0sp"
+            android:textColor="?android:textColorSecondary"
+            android:ellipsize="end"
+            android:id="@+id/desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="2"
+            app:fontFamily="Roboto-Light"/>
+
+    <com.yabeman.android.extended.widget.TypefaceTextView
+            android:textSize="10.0sp"
+            android:textColor="?android:textColorSecondary"
+            android:id="@+id/date"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            app:fontFamily="Roboto-Light"/>
+</LinearLayout>

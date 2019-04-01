@@ -1,0 +1,16 @@
+def webservices = [:]
+    webservices.SERVER_1 = '""'
+    webservices.SERVER_2 = '""'
+    webservices.SERVER_OLD = '""'
+    webservices.CLIENT = '""'
+    webservices.LINKED_IN_REDIRECT = '""'
+    webservices.BASIC_AUTH_1 = '""'
+    webservices.BASIC_AUTH_2 = '""'
+ext.webservices = webservices
+
+def keys = [:]
+    keys.LINKED_IN_API_KEY = '""'
+    keys.LINKED_IN_SECRET_KEY = '""'
+    keys.LINKED_IN_STATE = '""'
+    keys.CRASHLYTICS_API_KEY = '""'
+ext.keys = keys

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:background="@color/news_header_background"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:padding="@dimen/default_spacing_minor"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false">
+
+            <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="@dimen/dip_48"
+                    android:layout_height="@dimen/dip_48"
+                    android:scaleType="fitXY"/>
+
+            <com.yabeman.android.extended.widget.TypefaceTextView
+                    android:textSize="18.0sp"
+                    android:textColor="@android:color/white"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/country"
+                    android:paddingLeft="@dimen/default_spacing_minor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <com.yabeman.android.extended.widget.TypefaceTextView
+                android:textSize="14.0sp"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/title"
+                android:paddingLeft="@dimen/default_spacing_micro"
+                android:paddingRight="@dimen/default_spacing_micro"
+                android:paddingBottom="@dimen/default_spacing_micro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fontFamily="Roboto-Medium"/>
+    </LinearLayout>
+
+    <RelativeLayout
+            android:background="@color/news_category_background"
+            android:paddingLeft="@dimen/default_spacing_minor"
+            android:paddingTop="@dimen/default_spacing_micro"
+            android:paddingRight="@dimen/default_spacing_minor"
+            android:paddingBottom="@dimen/default_spacing_micro"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+        <com.yabeman.android.extended.widget.TypefaceTextView
+                android:textSize="14.0sp"
+                android:textColor="@android:color/white"
+                android:gravity="center_vertical"
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/category"
+                android:layout_alignParentRight="true"
+                app:fontFamily="Roboto-Light"/>
+
+        <com.yabeman.android.extended.widget.TypefaceTextView
+                android:textSize="16.0sp"
+                android:textColor="@android:color/white"
+                android:ellipsize="end"
+                android:id="@+id/category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:layout_toLeftOf="@+id/date"
+                android:layout_alignParentLeft="true"
+                app:fontFamily="Roboto-Medium"/>
+    </RelativeLayout>
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:background="@color/news_description_background"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+        <ScrollView
+                android:id="@+id/scrollview"
+                android:padding="@dimen/default_spacing_minor"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_weight="1.0">
+
+            <com.yabeman.android.extended.widget.TypefaceTextView
+                    android:textSize="12.0sp"
+                    android:id="@+id/description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingMultiplier="1.2"/>
+        </ScrollView>
+
+        <Button
+                android:textSize="12.0sp"
+                android:textColor="@android:color/white"
+                android:layout_gravity="right"
+                android:id="@+id/button"
+                android:background="@drawable/read_more_button_selector"
+                android:paddingLeft="@dimen/default_spacing_major"
+                android:paddingRight="@dimen/default_spacing_major"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dip_24"
+                android:text="@string/read_more"/>
+    </LinearLayout>
+</merge>

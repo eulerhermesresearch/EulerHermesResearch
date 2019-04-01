@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent">
+
+    <ProgressBar
+            android:layout_gravity="center"
+            android:id="@android:id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <com.eulerhermes.research.view.HListEmptyView
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@android:id/empty"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="horizontal"
+                  android:layout_width="wrap_content"
+                  android:layout_height="fill_parent"
+                  android:baselineAligned="false"
+                  android:divider="@drawable/transparent_divider"
+                  android:showDividers="middle">
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:divider="@drawable/transparent_divider"
+                android:layout_weight="1.0"
+                android:showDividers="middle">
+
+            <FrameLayout
+                    android:id="@+id/button1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0.0dip"
+                    android:foreground="@drawable/list_selector_holo_light"
+                    android:layout_weight="1.0">
+
+                <ImageView
+                        android:id="@+id/image1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"/>
+            </FrameLayout>
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0.0dip"
+                    android:baselineAligned="false"
+                    android:divider="@drawable/transparent_divider"
+                    android:layout_weight="1.0"
+                    android:showDividers="middle">
+
+                <FrameLayout
+                        android:id="@+id/button4"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:foreground="@drawable/list_selector_holo_light"
+                        android:layout_weight="1.0">
+
+                    <com.yabeman.android.extended.widget.SquareImageView
+                            android:id="@+id/image4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"/>
+                </FrameLayout>
+
+                <FrameLayout
+                        android:id="@+id/button5"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:foreground="@drawable/list_selector_holo_light"
+                        android:layout_weight="1.0">
+
+                    <com.yabeman.android.extended.widget.SquareImageView
+                            android:id="@+id/image5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"/>
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:divider="@drawable/transparent_divider"
+                android:layout_weight="1.0"
+                android:showDividers="middle">
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0.0dip"
+                    android:baselineAligned="false"
+                    android:divider="@drawable/transparent_divider"
+                    android:layout_weight="1.0"
+                    android:showDividers="middle">
+
+                <FrameLayout
+                        android:id="@+id/button2"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:foreground="@drawable/list_selector_holo_light"
+                        android:layout_weight="1.0">
+
+                    <com.yabeman.android.extended.widget.SquareImageView
+                            android:id="@+id/image2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"/>
+                </FrameLayout>
+
+                <FrameLayout
+                        android:id="@+id/button3"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:foreground="@drawable/list_selector_holo_light"
+                        android:layout_weight="1.0">
+
+                    <com.yabeman.android.extended.widget.SquareImageView
+                            android:id="@+id/image3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"/>
+                </FrameLayout>
+            </LinearLayout>
+
+            <FrameLayout
+                    android:id="@+id/button6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0.0dip"
+                    android:foreground="@drawable/list_selector_holo_light"
+                    android:layout_weight="1.0">
+
+                <ImageView
+                        android:id="@+id/image6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"/>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

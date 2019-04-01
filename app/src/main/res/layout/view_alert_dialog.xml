@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewFlipper xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/view_flipper"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content">
+
+    <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/default_spacing_minor"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:baselineAligned="false">
+
+        <ProgressBar
+                android:layout_gravity="center"
+                android:id="@android:id/progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+                android:id="@+id/loading"
+                android:paddingLeft="@dimen/default_spacing_minor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sending"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+        <TextView
+                android:textColor="@color/main_blue"
+                android:id="@+id/title"
+                android:paddingLeft="@dimen/default_spacing_major"
+                android:paddingTop="@dimen/default_spacing_minor"
+                android:paddingRight="@dimen/default_spacing_major"
+                android:paddingBottom="@dimen/default_spacing_minor"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                style="?android:attr/textAppearanceLarge"/>
+
+        <View
+                android:background="@color/main_blue"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dip_2"/>
+
+        <TextView
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:id="@+id/message"
+                android:padding="@dimen/default_spacing_major"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/dip_96"
+                style="?android:attr/textAppearanceMedium"/>
+
+        <View
+                android:background="?android:dividerHorizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dip_1"/>
+
+        <Button
+                android:id="@+id/button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ok"
+                style="?android:attr/buttonBarButtonStyle"/>
+    </LinearLayout>
+</ViewFlipper>

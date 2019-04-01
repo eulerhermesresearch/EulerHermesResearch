@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content">
+
+    <View
+            android:id="@+id/border"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/default_spacing_major"/>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/default_spacing_minor"
+            android:paddingTop="@dimen/default_spacing_minor"
+            android:paddingRight="@dimen/default_spacing_minor"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false">
+
+        <ImageView
+                android:id="@+id/image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <ScrollView
+                android:paddingLeft="@dimen/default_spacing_minor"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+            <com.yabeman.android.extended.widget.TypefaceTextView
+                    android:textSize="12.0sp"
+                    android:textColor="?android:textColorSecondary"
+                    android:id="@+id/desc"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:lineSpacingMultiplier="1.2"
+                    app:fontFamily="Roboto-Light"/>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

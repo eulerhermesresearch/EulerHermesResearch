@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:background="@color/main_blue"
+            android:padding="@dimen/default_spacing_micro"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false">
+
+        <ImageView
+                android:id="@+id/flag"
+                android:layout_width="@dimen/dip_56"
+                android:layout_height="@dimen/dip_56"/>
+
+        <com.yabeman.android.extended.widget.TypefaceTextView
+                android:textSize="24.0sp"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/country"
+                android:paddingLeft="@dimen/default_spacing_minor"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                app:fontFamily="Roboto-BoldCondensed"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:background="@android:color/white"
+            android:padding="@dimen/default_spacing_minor"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false">
+
+        <com.yabeman.android.extended.widget.TypefaceTextView
+                android:textSize="36.0sp"
+                android:textColor="@color/main_blue"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/grade"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                app:fontFamily="Roboto-Medium"/>
+
+        <ImageView
+                android:id="@+id/risklevel"
+                android:layout_width="@dimen/dip_48"
+                android:layout_height="@dimen/dip_48"
+                android:src="@drawable/ic_risklevel_unknown"/>
+    </LinearLayout>
+</LinearLayout>

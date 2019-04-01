@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                        android:id="@+id/drawer_layout"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent">
+
+    <FrameLayout
+            android:id="@+id/main"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"/>
+
+    <LinearLayout
+            android:layout_gravity="left"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent">
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16.0dip"
+                android:layout_marginTop="16.0dip"
+                android:layout_marginBottom="16.0dip"
+                android:src="@drawable/logo_eh_white"
+                android:adjustViewBounds="true"/>
+
+        <ListView
+                android:scrollbarStyle="outsideOverlay"
+                android:id="@+id/drawer"
+                android:clipToPadding="false"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:cacheColorHint="@android:color/transparent"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="0.0dip"
+                android:choiceMode="singleChoice"
+                android:layout_weight="1.0"/>
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="20.0dip"
+                android:layout_marginLeft="16.0dip"
+                android:layout_marginBottom="16.0dip"
+                android:src="@drawable/ic_allianz_signature"/>
+    </LinearLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

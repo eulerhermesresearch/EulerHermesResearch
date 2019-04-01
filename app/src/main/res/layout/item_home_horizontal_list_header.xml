@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="fill_parent"
+             android:layout_height="200.0dip">
+
+    <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:src="@drawable/eiffel_tower"
+            android:scaleType="centerCrop"/>
+
+    <HorizontalScrollView
+            android:scrollbarStyle="outsideOverlay"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/scrollview"
+            android:padding="16.0dip"
+            android:clipToPadding="false"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent">
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:baselineAligned="false">
+
+            <FrameLayout
+                    android:id="@+id/item1"
+                    android:background="@drawable/block_infographics"
+                    android:layout_width="168.0dip"
+                    android:layout_height="168.0dip"
+                    android:foreground="@drawable/list_selector_holo_light"/>
+
+            <FrameLayout
+                    android:id="@+id/item2"
+                    android:background="@drawable/block_map"
+                    android:layout_width="168.0dip"
+                    android:layout_height="168.0dip"
+                    android:layout_marginLeft="16.0dip"
+                    android:foreground="@drawable/list_selector_holo_light"/>
+
+            <FrameLayout
+                    android:id="@+id/item3"
+                    android:background="@drawable/block_reports"
+                    android:layout_width="168.0dip"
+                    android:layout_height="168.0dip"
+                    android:layout_marginLeft="16.0dip"
+                    android:foreground="@drawable/list_selector_holo_light"/>
+
+            <FrameLayout
+                    android:id="@+id/item4"
+                    android:background="@drawable/block_videos"
+                    android:layout_width="168.0dip"
+                    android:layout_height="168.0dip"
+                    android:layout_marginLeft="16.0dip"
+                    android:foreground="@drawable/list_selector_holo_light"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+</FrameLayout>

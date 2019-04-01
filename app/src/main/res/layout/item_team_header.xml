@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:paddingLeft="@dimen/dip_1"
+             android:paddingTop="@dimen/default_spacing_major"
+             android:paddingRight="@dimen/dip_1"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content">
+
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+              android:textSize="16.0sp"
+              android:textColor="@android:color/white"
+              android:id="@+id/header_title"
+              android:padding="@dimen/default_spacing_minor"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"/>
+</FrameLayout>

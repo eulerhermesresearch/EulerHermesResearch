@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ProgressBar android:layout_gravity="center" android:id="@android:id/progress" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.eulerhermes.research.view.HListEmptyView android:gravity="center" android:layout_gravity="center" android:id="@android:id/empty" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    <GridLayout android:id="@+id/gridLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:columnCount="1" android:columnOrderPreserved="true" android:useDefaultMargins="false" android:alignmentMode="alignBounds">
+        <com.eulerhermes.research.view.LastDocsTabletView android:id="@+id/last_docs_1" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.eulerhermes.research.view.LastDocsTabletView android:id="@+id/last_docs_2" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.eulerhermes.research.view.LastDocsTabletView android:id="@+id/last_docs_3" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.eulerhermes.research.view.LastDocsTabletView android:id="@+id/last_docs_4" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.eulerhermes.research.view.LastDocsTabletView android:id="@+id/last_docs_5" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </GridLayout>
+</FrameLayout>

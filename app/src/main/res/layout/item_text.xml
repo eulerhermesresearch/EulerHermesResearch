@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:background="@drawable/card_background"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content">
+
+    <com.yabeman.android.extended.widget.TypefaceTextView
+            android:textSize="12.0sp"
+            android:textColor="?android:textColorSecondary"
+            android:id="@+id/text"
+            android:padding="@dimen/default_spacing_micro"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingMultiplier="1.2"
+            app:fontFamily="Roboto-Light"/>
+</FrameLayout>

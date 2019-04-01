@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content">
+
+    <com.yabeman.android.extended.widget.TypefaceTextView
+            android:textSize="18.0sp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/header_bgd"
+            android:padding="@dimen/default_spacing_major"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/key_figures"
+            app:fontFamily="Roboto-Light"/>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:background="@android:color/white"
+            android:padding="@dimen/default_spacing_minor"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false">
+
+        <com.yabeman.android.extended.widget.TypefaceTextView
+                android:textSize="14.0sp"
+                android:textStyle="bold"
+                android:textColor="?android:textColorSecondary"
+                android:layout_gravity="bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gdp"
+                android:lines="1"
+                app:fontFamily="Roboto-Light"/>
+
+        <com.yabeman.android.extended.widget.TypefaceTextView
+                android:textSize="18.0sp"
+                android:textStyle="bold"
+                android:textColor="@color/main_blue"
+                android:gravity="right"
+                android:id="@+id/gdp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                app:fontFamily="Roboto-BoldCondensed"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:background="@android:color/white"
+            android:padding="@dimen/default_spacing_minor"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:baselineAligned="false">
+
+        <com.yabeman.android.extended.widget.TypefaceTextView
+                android:textSize="14.0sp"
+                android:textStyle="bold"
+                android:textColor="?android:textColorSecondary"
+                android:layout_gravity="bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gdp_per_capital"
+                android:lines="1"
+                app:fontFamily="Roboto-Light"/>
+
+        <com.yabeman.android.extended.widget.TypefaceTextView
+                android:textSize="18.0sp"
+                android:textStyle="bold"
+                android:textColor="@color/main_blue"
+                android:gravity="right"
+                android:id="@+id/gdp_per_capital"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                app:fontFamily="Roboto-BoldCondensed"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:background="@drawable/card_background"
+            android:padding="@dimen/default_spacing_minor"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false">
+
+        <com.yabeman.android.extended.widget.TypefaceTextView
+                android:textSize="14.0sp"
+                android:textStyle="bold"
+                android:textColor="?android:textColorSecondary"
+                android:layout_gravity="bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/population"
+                android:lines="1"
+                app:fontFamily="Roboto-Light"/>
+
+        <com.yabeman.android.extended.widget.TypefaceTextView
+                android:textSize="18.0sp"
+                android:textStyle="bold"
+                android:textColor="@color/main_blue"
+                android:gravity="right"
+                android:id="@+id/population"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                app:fontFamily="Roboto-BoldCondensed"/>
+    </LinearLayout>
+</LinearLayout>

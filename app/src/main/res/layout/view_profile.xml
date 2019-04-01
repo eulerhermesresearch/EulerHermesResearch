@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:id="@+id/profile_view"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent">
+
+    <TextView
+            android:textSize="20.0sp"
+            android:textColor="#ffffffff"
+            android:gravity="center_vertical"
+            android:id="@+id/title"
+            android:background="@color/main_blue"
+            android:paddingLeft="16.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dip"
+            android:text="Profile"/>
+
+    <ScrollView
+            android:padding="16.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0">
+
+        <LinearLayout
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/default_spacing_minor"
+                android:paddingBottom="@dimen/default_spacing_minor"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+            <TextView
+                    android:textStyle="bold"
+                    android:paddingLeft="@dimen/default_spacing_major"
+                    android:paddingRight="@dimen/default_spacing_major"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/first_name"
+                    style="@style/WizardFormLabel"/>
+
+            <TextView
+                    android:textSize="16.0sp"
+                    android:id="@+id/first_name"
+                    android:paddingLeft="@dimen/default_spacing_major"
+                    android:paddingRight="@dimen/default_spacing_major"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:textStyle="bold"
+                    android:paddingLeft="@dimen/default_spacing_major"
+                    android:paddingTop="@dimen/default_spacing_major"
+                    android:paddingRight="@dimen/default_spacing_major"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/last_name"
+                    style="@style/WizardFormLabel"/>
+
+            <TextView
+                    android:textSize="16.0sp"
+                    android:id="@+id/last_name"
+                    android:paddingLeft="@dimen/default_spacing_major"
+                    android:paddingRight="@dimen/default_spacing_major"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:textStyle="bold"
+                    android:paddingLeft="@dimen/default_spacing_major"
+                    android:paddingTop="@dimen/default_spacing_major"
+                    android:paddingRight="@dimen/default_spacing_major"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/email"
+                    style="@style/WizardFormLabel"/>
+
+            <TextView
+                    android:textSize="16.0sp"
+                    android:id="@+id/email"
+                    android:paddingLeft="@dimen/default_spacing_major"
+                    android:paddingRight="@dimen/default_spacing_major"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"/>
+
+            <Button
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:id="@+id/changePasswordButton"
+                    android:paddingLeft="@dimen/default_spacing_major"
+                    android:paddingRight="@dimen/default_spacing_major"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_spacing_major"
+                    android:text="Change my password"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+            android:gravity="right"
+            android:orientation="horizontal"
+            android:paddingRight="16.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_spacing_minor"
+            android:layout_marginBottom="@dimen/default_spacing_minor">
+
+        <Button
+                android:textColor="@android:color/white"
+                android:id="@+id/updateInfos"
+                android:background="@color/main_blue"
+                android:paddingLeft="@dimen/default_spacing_major"
+                android:paddingRight="@dimen/default_spacing_major"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/update"/>
+
+        <Button
+                android:textColor="@android:color/white"
+                android:id="@+id/logout"
+                android:background="@color/main_blue"
+                android:paddingLeft="@dimen/default_spacing_major"
+                android:paddingRight="@dimen/default_spacing_major"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16.0dip"
+                android:text="Disconnect"/>
+    </LinearLayout>
+</LinearLayout>

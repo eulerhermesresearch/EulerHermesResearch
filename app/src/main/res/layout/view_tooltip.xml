@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:baselineAligned="false">
+
+    <ImageView
+            android:id="@+id/image"
+            android:layout_width="@dimen/dip_24"
+            android:layout_height="@dimen/dip_24"
+            android:scaleType="fitXY"/>
+
+    <com.yabeman.android.extended.widget.TypefaceTextView
+            android:textSize="14.0sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/country"
+            android:paddingLeft="@dimen/default_spacing_minor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+</LinearLayout>

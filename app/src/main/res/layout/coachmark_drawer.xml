@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/coachmark"
+             android:background="#66000000"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="?android:actionBarSize">
+
+        <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/drawer_layout_item_height"
+                android:layout_marginLeft="150.0dip"
+                android:baselineAligned="false">
+
+            <ImageView
+                    android:layout_width="48.0dip"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/point_line_h"
+                    android:scaleType="fitXY"/>
+
+            <TextView
+                    android:textSize="12.0sp"
+                    android:textColor="#ffffffff"
+                    android:paddingLeft="8.0dip"
+                    android:paddingRight="8.0dip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/coachmark_drawer_login"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/drawer_layout_item_height"
+                android:layout_marginLeft="150.0dip"
+                android:baselineAligned="false"/>
+
+        <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/drawer_layout_item_height"
+                android:layout_marginLeft="150.0dip"
+                android:baselineAligned="false">
+
+            <ImageView
+                    android:layout_width="48.0dip"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/point_line_h"
+                    android:scaleType="fitXY"/>
+
+            <TextView
+                    android:textSize="12.0sp"
+                    android:textColor="#ffffffff"
+                    android:paddingLeft="8.0dip"
+                    android:paddingRight="8.0dip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/coachmark_drawer_map"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/drawer_layout_item_height"
+                android:layout_marginLeft="150.0dip"
+                android:baselineAligned="false">
+
+            <ImageView
+                    android:layout_width="48.0dip"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/point_line_h"
+                    android:scaleType="fitXY"/>
+
+            <TextView
+                    android:textSize="12.0sp"
+                    android:textColor="#ffffffff"
+                    android:paddingLeft="8.0dip"
+                    android:paddingRight="8.0dip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/coachmark_drawer_ehcmap"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/drawer_layout_item_height"
+                android:layout_marginLeft="150.0dip"
+                android:baselineAligned="false">
+
+            <ImageView
+                    android:layout_width="48.0dip"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/point_line_h"
+                    android:scaleType="fitXY"/>
+
+            <TextView
+                    android:textSize="12.0sp"
+                    android:textColor="#ffffffff"
+                    android:paddingLeft="8.0dip"
+                    android:paddingRight="8.0dip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/coachmark_drawer_videos"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/drawer_layout_item_height"
+                android:layout_marginLeft="150.0dip"
+                android:baselineAligned="false">
+
+            <ImageView
+                    android:layout_width="48.0dip"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/point_line_h"
+                    android:scaleType="fitXY"/>
+
+            <TextView
+                    android:textSize="12.0sp"
+                    android:textColor="#ffffffff"
+                    android:paddingLeft="8.0dip"
+                    android:paddingRight="8.0dip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/coachmark_drawer_team"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/drawer_layout_item_height"
+                android:layout_marginLeft="150.0dip"
+                android:baselineAligned="false">
+
+            <ImageView
+                    android:layout_width="48.0dip"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/point_line_h"
+                    android:scaleType="fitXY"/>
+
+            <TextView
+                    android:textSize="12.0sp"
+                    android:textColor="#ffffffff"
+                    android:paddingLeft="8.0dip"
+                    android:paddingRight="8.0dip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/coachmark_drawer_recents"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

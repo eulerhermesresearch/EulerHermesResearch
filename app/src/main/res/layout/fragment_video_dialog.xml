@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content">
+
+    <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:foreground="@drawable/list_selector_holo_light">
+
+        <ImageView
+                android:id="@+id/image"
+                android:layout_width="fill_parent"
+                android:layout_height="200.0dip"
+                android:scaleType="centerCrop"/>
+
+        <ImageView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_action_play_over_video_light"/>
+    </FrameLayout>
+
+    <com.yabeman.android.extended.widget.TypefaceTextView
+            android:textSize="18.0sp"
+            android:textColor="@android:color/white"
+            android:id="@+id/category"
+            android:padding="@dimen/default_spacing_minor"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:fontFamily="Roboto-Medium"/>
+
+    <com.yabeman.android.extended.widget.TypefaceTextView
+            android:textSize="14.0sp"
+            android:textColor="?android:textColorPrimary"
+            android:id="@+id/title"
+            android:paddingLeft="@dimen/default_spacing_minor"
+            android:paddingTop="@dimen/default_spacing_minor"
+            android:paddingRight="@dimen/default_spacing_minor"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:fontFamily="Roboto-Medium"/>
+
+    <com.yabeman.android.extended.widget.TypefaceTextView
+            android:textSize="12.0sp"
+            android:textColor="?android:textColorSecondary"
+            android:id="@+id/desc"
+            android:paddingLeft="@dimen/default_spacing_minor"
+            android:paddingTop="@dimen/default_spacing_micro"
+            android:paddingRight="@dimen/default_spacing_minor"
+            android:paddingBottom="@dimen/default_spacing_micro"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingMultiplier="1.2"
+            app:fontFamily="Roboto-Light"/>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/default_spacing_minor"
+            android:paddingTop="@dimen/default_spacing_micro"
+            android:paddingRight="@dimen/default_spacing_minor"
+            android:paddingBottom="@dimen/default_spacing_minor"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false">
+
+        <com.yabeman.android.extended.widget.TypefaceTextView
+                android:textSize="12.0sp"
+                android:textColor="?android:textColorSecondary"
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fontFamily="Roboto-Thin"/>
+
+        <com.yabeman.android.extended.widget.TypefaceTextView
+                android:textSize="12.0sp"
+                android:textColor="?android:textColorSecondary"
+                android:gravity="right"
+                android:id="@+id/details"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                app:fontFamily="Roboto-Thin"/>
+    </LinearLayout>
+</LinearLayout>

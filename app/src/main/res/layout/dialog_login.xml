@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+
+    <TextView
+            android:textSize="20.0sp"
+            android:textColor="#ffffffff"
+            android:gravity="center_vertical"
+            android:id="@+id/title"
+            android:background="@color/main_blue"
+            android:paddingLeft="16.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dip"
+            android:text="Connect"/>
+
+    <ViewSwitcher
+            android:id="@+id/view_switcher"
+            android:background="@color/app_background"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/default_spacing_major"
+                android:paddingRight="@dimen/default_spacing_major"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+            <TextView
+                    android:gravity="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16.0dip"
+                    android:layout_marginBottom="16.0dip"
+                    android:text="@string/connect_desc"/>
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                <ImageView
+                        android:layout_width="96.0dip"
+                        android:layout_height="96.0dip"
+                        android:src="@drawable/lock"
+                        android:adjustViewBounds="true"/>
+
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="@dimen/default_spacing_major"
+                        android:layout_weight="1.0">
+
+                    <EditText
+                            android:id="@+id/login"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/fake_email"
+                            android:inputType="textEmailAddress|textNoSuggestions"
+                            android:imeOptions="actionNext"/>
+
+                    <EditText
+                            android:id="@+id/password"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/password"
+                            android:inputType="textPassword"
+                            android:imeActionLabel="@string/sign_in"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:gravity="right"
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_spacing_minor">
+
+                <Button
+                        android:textColor="@android:color/white"
+                        android:id="@+id/register"
+                        android:background="@color/main_blue"
+                        android:paddingLeft="32.0dip"
+                        android:paddingRight="32.0dip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/register"/>
+
+                <Button
+                        android:textColor="@android:color/white"
+                        android:id="@+id/signin"
+                        android:background="@color/main_blue"
+                        android:paddingLeft="32.0dip"
+                        android:paddingRight="32.0dip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8.0dip"
+                        android:text="@string/sign_in"/>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:gravity="right"
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_spacing_minor">
+
+                <Button
+                        android:textSize="14.0sp"
+                        android:textColor="@color/lighter_blue"
+                        android:gravity="center"
+                        android:layout_gravity="center_horizontal"
+                        android:id="@+id/linkedin"
+                        android:paddingLeft="16.0dip"
+                        android:paddingRight="16.0dip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Connect with LinkedIn"
+                        style="?android:attr/buttonBarButtonStyle"/>
+
+                <Button
+                        android:textSize="14.0sp"
+                        android:textColor="@color/lighter_blue"
+                        android:gravity="center"
+                        android:layout_gravity="center_horizontal"
+                        android:id="@+id/forgot_password"
+                        android:paddingLeft="16.0dip"
+                        android:paddingRight="16.0dip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16.0dip"
+                        android:text="I forgot my password"
+                        style="?android:attr/buttonBarButtonStyle"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_spacing_major">
+
+            <GridLayout
+                    android:id="@+id/grid_layout"
+                    android:paddingLeft="@dimen/default_spacing_major"
+                    android:paddingRight="@dimen/default_spacing_major"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:columnCount="1">
+
+                <EditText
+                        android:id="@+id/first_name"
+                        android:layout_width="fill_parent"
+                        android:hint="@string/first_name"
+                        android:inputType="textPersonName"
+                        android:imeOptions="actionNext"/>
+
+                <EditText
+                        android:id="@+id/last_name"
+                        android:layout_width="fill_parent"
+                        android:hint="@string/last_name"
+                        android:inputType="textPersonName"
+                        android:imeOptions="actionNext"/>
+
+                <EditText
+                        android:id="@+id/email"
+                        android:layout_width="fill_parent"
+                        android:hint="@string/email"
+                        android:inputType="textEmailAddress"
+                        android:imeActionLabel="@string/sign_up"/>
+
+                <Switch
+                        android:textSize="12.0sp"
+                        android:id="@+id/has_accepted_info"
+                        android:paddingTop="@dimen/default_spacing_minor"
+                        android:checked="true"
+                        android:textOn="@string/yes"
+                        android:textOff="@string/no"
+                        android:text="@string/register_accept_receive_info"/>
+            </GridLayout>
+
+            <ViewFlipper
+                    android:id="@+id/view_flipper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_spacing_major"
+                    android:layout_below="@+id/grid_layout"
+                    android:layout_centerHorizontal="true">
+
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+
+                    <Button
+                            android:textColor="@android:color/white"
+                            android:id="@+id/cancel_button"
+                            android:background="@color/main_blue"
+                            android:paddingLeft="@dimen/default_spacing_major"
+                            android:paddingRight="@dimen/default_spacing_major"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/default_spacing_major"
+                            android:text="@string/cancel"/>
+
+                    <Button
+                            android:textColor="@android:color/white"
+                            android:id="@+id/register_button"
+                            android:background="@color/main_blue"
+                            android:paddingLeft="@dimen/default_spacing_major"
+                            android:paddingRight="@dimen/default_spacing_major"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/default_spacing_major"
+                            android:text="@string/send"/>
+                </LinearLayout>
+
+                <ProgressBar
+                        android:layout_gravity="center"
+                        android:id="@android:id/progress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+            </ViewFlipper>
+        </RelativeLayout>
+    </ViewSwitcher>
+</LinearLayout>

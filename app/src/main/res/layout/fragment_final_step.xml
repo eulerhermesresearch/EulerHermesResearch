@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:paddingTop="@dimen/default_spacing_minor"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent">
+
+    <TextView
+            android:textColor="@color/main_blue"
+            android:paddingLeft="@dimen/default_spacing_minor"
+            android:paddingRight="@dimen/default_spacing_minor"
+            android:paddingBottom="@dimen/default_spacing_major"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/final_step"
+            style="?android:attr/textAppearanceLarge"/>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/default_spacing_minor"
+            android:paddingRight="@dimen/default_spacing_minor"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false">
+
+        <EditText
+                android:id="@+id/company"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:hint="@string/company"
+                android:layout_weight="1.0"
+                android:inputType="textNoSuggestions"
+                android:imeOptions="actionNext"/>
+
+        <EditText
+                android:id="@+id/sector"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:hint="@string/sector"
+                android:layout_weight="1.0"
+                android:inputType="textAutoComplete"
+                android:imeOptions="actionNext"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/default_spacing_minor"
+            android:paddingRight="@dimen/default_spacing_minor"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false">
+
+        <EditText
+                android:id="@+id/job"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:hint="@string/job"
+                android:layout_weight="1.0"
+                android:inputType="textNoSuggestions"
+                android:imeOptions="actionNext"/>
+
+        <EditText
+                android:id="@+id/department"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:hint="@string/department"
+                android:layout_weight="1.0"
+                android:inputType="textNoSuggestions"
+                android:imeOptions="actionNext"/>
+    </LinearLayout>
+
+    <Switch
+            android:textSize="12.0sp"
+            android:id="@+id/eh_customer"
+            android:paddingLeft="@dimen/default_spacing_minor"
+            android:paddingTop="@dimen/default_spacing_minor"
+            android:paddingRight="@dimen/default_spacing_minor"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:textOn="@string/yes"
+            android:textOff="@string/no"
+            android:text="@string/eh_customer"/>
+
+    <EditText
+            android:id="@+id/country"
+            android:paddingLeft="@dimen/default_spacing_minor"
+            android:paddingRight="@dimen/default_spacing_minor"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/country"
+            android:inputType="textNoSuggestions"
+            android:imeOptions="actionDone"/>
+
+    <ViewFlipper
+            android:id="@+id/view_flipper"
+            android:paddingTop="@dimen/dip_24"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+            <Button
+                    android:textColor="@android:color/white"
+                    android:id="@+id/cancel"
+                    android:background="@color/dark_grey_blue"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cancel"
+                    android:layout_weight="1.0"/>
+
+            <Button
+                    android:textColor="@android:color/white"
+                    android:id="@+id/send"
+                    android:background="@color/main_blue"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="@string/send"
+                    android:layout_weight="1.0"/>
+        </LinearLayout>
+
+        <ProgressBar
+                android:layout_gravity="center"
+                android:id="@android:id/progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+    </ViewFlipper>
+</LinearLayout>

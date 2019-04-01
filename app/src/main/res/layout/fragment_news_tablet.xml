@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_width="200.0dip"
+             android:layout_height="fill_parent">
+
+    <ProgressBar
+            android:layout_gravity="center_vertical"
+            android:id="@android:id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="76.0dip"/>
+
+    <com.eulerhermes.research.view.HListEmptyView
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@android:id/empty"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"/>
+
+    <RelativeLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="200.0dip"
+            android:layout_height="fill_parent">
+
+        <com.viewpagerindicator.CirclePageIndicator
+                android:layout_gravity="bottom"
+                android:id="@+id/pager_indicator"
+                android:background="@color/news_description_background"
+                android:paddingTop="@dimen/default_spacing_minor"
+                android:paddingBottom="@dimen/default_spacing_minor"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                app:strokeWidth="1.0dip"
+                app:fillColor="#ffffffff"
+                app:pageColor="#00000000"
+                app:radius="4.0dip"
+                app:strokeColor="#ffffffff"/>
+
+        <com.jfeinstein.jazzyviewpager.JazzyViewPager
+                android:id="@+id/pager"
+                android:visibility="gone"
+                android:layout_width="200.0dip"
+                android:layout_height="fill_parent"
+                android:layout_above="@+id/pager_indicator"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"/>
+    </RelativeLayout>
+</FrameLayout>

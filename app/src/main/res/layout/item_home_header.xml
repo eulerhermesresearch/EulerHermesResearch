@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+          android:textSize="@dimen/home_header_text_size"
+          android:textColor="@android:color/white"
+          android:id="@+id/header_title"
+          android:background="@color/main_blue"
+          android:paddingLeft="@dimen/default_spacing_major"
+          android:paddingTop="@dimen/default_spacing_minor"
+          android:paddingRight="@dimen/default_spacing_major"
+          android:paddingBottom="@dimen/default_spacing_minor"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:text="@string/home_list_header"
+          android:textAllCaps="true"/>

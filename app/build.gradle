@@ -1,0 +1,140 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+apply plugin: 'com.android.application'
+
+//apply plugin: 'io.fabric'
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+apply from: "/../webservices.gradle"
+
+android {
+    compileSdkVersion app.targetVersion
+    defaultConfig {
+        applicationId "com.eulerhermes.research"
+        minSdkVersion app.minSDKVersion
+        targetSdkVersion app.targetVersion
+        versionCode 26
+        versionName "3.1"
+        multiDexEnabled true
+
+        manifestPlaceholders = [crashlytics_api_key:keys.CRASHLYTICS_API_KEY]
+    }
+    buildTypes {
+        debug {
+//            applicationIdSuffix ".dev"
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+
+        buildTypes.each {
+            it.buildConfigField 'String', 'SERVER_1', webservices.SERVER_1
+            it.buildConfigField 'String', 'SERVER_2', webservices.SERVER_2
+            it.buildConfigField 'String', 'SERVER_OLD', webservices.SERVER_OLD
+            it.buildConfigField 'String', 'CLIENT', webservices.CLIENT
+            it.buildConfigField 'String', 'LINKED_IN_REDIRECT', webservices.LINKED_IN_REDIRECT
+            it.buildConfigField 'String', 'BASIC_AUTH_1', webservices.BASIC_AUTH_1
+            it.buildConfigField 'String', 'BASIC_AUTH_2', webservices.BASIC_AUTH_2
+            it.buildConfigField 'String', 'LINKED_IN_API_KEY', keys.LINKED_IN_API_KEY
+            it.buildConfigField 'String', 'LINKED_IN_SECRET_KEY', keys.LINKED_IN_SECRET_KEY
+            it.buildConfigField 'String', 'LINKED_IN_STATE', keys.LINKED_IN_STATE
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/ASL2.0.txt'
+        exclude 'META-INF/ASL2.0'
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['jniLibs']
+        }
+    }
+}
+
+repositories {
+    maven {
+        url 'https://repo.spring.io/libs-milestone'
+    }
+
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation project(":discreetapprate")
+    implementation project(":horizontalvariablelistview")
+    implementation project(":jazzyviewpager")
+    implementation project(":viewpagerindicator")
+    implementation project(":yabeman")
+
+    implementation deps.kotlin
+    implementation deps.androidx.appcompat
+    implementation deps.androidx.recyclerview
+    implementation 'com.android.support:multidex:1.0.3'
+
+    implementation 'androidx.core:core-ktx:1.1.0-alpha04'
+    implementation 'org.apache.commons:commons-lang3:3.8.1'
+    implementation 'com.google.http-client:google-http-client:1.22.0'
+    implementation 'com.google.http-client:google-http-client-android:1.22.0'
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+    implementation 'com.j256.ormlite:ormlite-android:4.47'
+
+    implementation 'com.google.firebase:firebase-messaging:17.3.4'
+
+    implementation 'com.octo.android.robospice:robospice:1.4.14'
+    implementation 'com.octo.android.robospice:robospice-cache:1.4.14'
+    implementation 'com.octo.android.robospice:robospice-spring-android:1.4.14'
+    implementation 'com.octo.android.robospice:robospice-google-http-client:1.4.14'
+    implementation 'com.octo.android.robospice:robospice-ormlite:1.4.14'
+    implementation 'com.fasterxml.jackson.core:jackson-annotations:2.3.3'
+    implementation 'com.fasterxml.jackson.core:jackson-core:2.3.3'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.3.3'
+    implementation 'org.codehaus.jackson:jackson-core-asl:1.9.11'
+    implementation 'org.codehaus.jackson:jackson-mapper-asl:1.9.13'
+    implementation('com.google.http-client:google-http-client-jackson2:1.22.0') {
+        exclude module: 'xpp3'
+        exclude group: 'stax'
+    }
+    implementation 'commons-io:commons-io:2.5'
+    implementation 'org.apache.commons:commons-lang3:3.1'
+    implementation('org.simpleframework:simple-xml:2.7') {
+        exclude module: 'stax'
+        exclude module: 'stax-api'
+        exclude module: 'xpp3'
+    }
+    implementation 'com.blandware.android.atleap:core:0.3@aar'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.nhaarman.supertooltips:library:3.0.0'
+    // For some reason, it's crashing. So I had to include this library as a module
+    // implementation 'fr.nicolaspomepuy:discreetapprate:2.0.3@aar'
+    implementation('com.crashlytics.sdk.android:crashlytics:2.9.9') {
+        transitive = true;
+    }
+
+    implementation 'org.springframework.android:spring-android-core:1.0.1.RELEASE'
+    implementation 'org.springframework.android:spring-android-rest-template:1.0.1.RELEASE'
+
+    implementation 'com.google.firebase:firebase-core:16.0.7'
+}
+
+apply plugin: 'com.google.gms.google-services'

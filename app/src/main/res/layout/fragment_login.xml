@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:paddingLeft="@dimen/default_spacing_minor"
+              android:paddingTop="@dimen/default_spacing_major"
+              android:paddingRight="@dimen/default_spacing_minor"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent">
+
+    <TextView
+            android:gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16.0dip"
+            android:layout_marginBottom="16.0dip"
+            android:text="@string/connect_desc"/>
+
+    <EditText
+            android:id="@+id/login"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/fake_email"
+            android:inputType="textEmailAddress|textNoSuggestions"
+            android:imeOptions="actionNext"/>
+
+    <EditText
+            android:id="@+id/password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:imeActionLabel="@string/sign_in"/>
+
+    <LinearLayout
+            android:gravity="right"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_spacing_major">
+
+        <Button
+                android:textColor="@android:color/white"
+                android:id="@+id/register"
+                android:background="@color/main_blue"
+                android:paddingLeft="32.0dip"
+                android:paddingRight="32.0dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/register"/>
+
+        <Button
+                android:textColor="@android:color/white"
+                android:id="@+id/signin"
+                android:background="@color/main_blue"
+                android:paddingLeft="32.0dip"
+                android:paddingRight="32.0dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.0dip"
+                android:text="@string/sign_in"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:gravity="right"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_spacing_minor">
+
+        <Button
+                android:textSize="14.0sp"
+                android:textColor="@color/lighter_blue"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/linkedin"
+                android:paddingLeft="16.0dip"
+                android:paddingRight="16.0dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Connect with LinkedIn"
+                style="?android:attr/buttonBarButtonStyle"/>
+
+        <Space
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"/>
+
+        <Button
+                android:textSize="14.0sp"
+                android:textColor="@color/lighter_blue"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/forgot_password"
+                android:paddingLeft="16.0dip"
+                android:paddingRight="16.0dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I forgot my password"
+                style="?android:attr/buttonBarButtonStyle"/>
+    </LinearLayout>
+</LinearLayout>

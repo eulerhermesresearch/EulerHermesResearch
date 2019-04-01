@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:padding="0.0dip"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:layout_margin="0.0dip">
+
+    <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+        <ProgressBar
+                android:layout_gravity="center"
+                android:id="@android:id/progress"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                style="?android:attr/progressBarStyleLarge"/>
+
+        <FrameLayout
+                android:id="@+id/listContainer"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+            <com.tonicartos.widget.stickygridheaders.StickyGridHeadersGridView
+                    android:scrollbarStyle="outsideOverlay"
+                    android:id="@+id/grid"
+                    android:padding="@dimen/grid_padding"
+                    android:fadingEdgeLength="0.0dip"
+                    android:clipToPadding="false"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:listSelector="@drawable/card_selector"
+                    android:drawSelectorOnTop="true"
+                    android:cacheColorHint="@android:color/transparent"
+                    android:horizontalSpacing="@dimen/grid_spacing"
+                    android:verticalSpacing="@dimen/grid_spacing"
+                    android:requiresFadingEdge="none"/>
+        </FrameLayout>
+    </FrameLayout>
+
+    <include
+            android:id="@+id/header"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/item_doc_category_header"/>
+</FrameLayout>

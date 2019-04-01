@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:hlv="http://schemas.android.com/apk/res-auto"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent">
+
+    <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:src="@drawable/bgd_latest_docs"
+            android:scaleType="centerCrop"/>
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/grid_padding"
+            android:paddingTop="@dimen/grid_padding"
+            android:paddingRight="@dimen/grid_padding"
+            android:paddingBottom="@dimen/grid_padding"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+        <TextView
+                android:textSize="18.0sp"
+                android:textStyle="bold"
+                android:textColor="#ffffffff"
+                android:paddingBottom="@dimen/grid_padding"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/latest_publications"/>
+
+        <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+            <ProgressBar
+                    android:layout_gravity="center"
+                    android:id="@android:id/progress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"/>
+
+            <FrameLayout
+                    android:id="@+id/listContainer"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                <ListView
+                        android:scrollbarStyle="outsideOverlay"
+                        android:id="@android:id/list"
+                        android:fadingEdgeLength="0.0dip"
+                        android:clipToPadding="false"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:listSelector="@drawable/list_selector_holo_light"
+                        android:drawSelectorOnTop="true"
+                        android:cacheColorHint="@android:color/transparent"
+                        android:divider="@android:color/transparent"
+                        android:requiresFadingEdge="none"/>
+            </FrameLayout>
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

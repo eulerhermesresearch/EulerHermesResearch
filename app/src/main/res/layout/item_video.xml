@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:background="@drawable/bg_card_white"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent">
+
+    <com.eulerhermes.research.widget.VideoImageView
+            android:id="@+id/image"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="centerCrop"/>
+
+    <com.yabeman.android.extended.widget.TypefaceTextView
+            android:textSize="12.0sp"
+            android:textStyle="bold"
+            android:textColor="?android:textColorSecondary"
+            android:ellipsize="end"
+            android:id="@+id/title"
+            android:paddingLeft="@dimen/default_spacing_minor"
+            android:paddingTop="@dimen/default_spacing_micro"
+            android:paddingRight="@dimen/default_spacing_minor"
+            android:paddingBottom="@dimen/default_spacing_micro"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:lines="2"/>
+
+    <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/default_spacing_minor"
+            android:paddingTop="@dimen/default_spacing_micro"
+            android:paddingRight="@dimen/default_spacing_minor"
+            android:paddingBottom="@dimen/default_spacing_minor"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false">
+
+        <com.yabeman.android.extended.widget.TypefaceTextView
+                android:textSize="12.0sp"
+                android:textColor="?android:textColorTertiary"
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                app:fontFamily="Roboto-Light"/>
+
+        <com.yabeman.android.extended.widget.TypefaceTextView
+                android:textSize="12.0sp"
+                android:textColor="?android:textColorTertiary"
+                android:gravity="right"
+                android:id="@+id/author"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:layout_weight="1.0"
+                app:fontFamily="Roboto-Light"/>
+    </LinearLayout>
+</LinearLayout>

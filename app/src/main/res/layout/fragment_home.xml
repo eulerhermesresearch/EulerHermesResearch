@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:hlv="http://schemas.android.com/apk/res-auto"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+        <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:background="#ffffffff"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/home_top_bar">
+
+            <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32.0dip"
+                    android:layout_marginLeft="16.0dip"
+                    android:src="@drawable/ic_app_logo"
+                    android:adjustViewBounds="true"/>
+
+            <Space
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"/>
+
+            <ImageButton
+                    android:id="@+id/contact_button"
+                    android:layout_width="48.0dip"
+                    android:layout_height="48.0dip"
+                    android:src="@drawable/ic_contact"
+                    style="?android:attr/borderlessButtonStyle"/>
+
+            <ImageButton
+                    android:id="@+id/user_button"
+                    android:layout_width="48.0dip"
+                    android:layout_height="48.0dip"
+                    android:layout_marginLeft="@dimen/default_spacing_micro"
+                    android:src="@drawable/ic_profile"
+                    style="?android:attr/borderlessButtonStyle"/>
+        </LinearLayout>
+
+        <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+            <ProgressBar
+                    android:layout_gravity="center"
+                    android:id="@android:id/progress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <FrameLayout
+                    android:id="@+id/listContainer"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                <com.tonicartos.widget.stickygridheaders.StickyGridHeadersGridView
+                        android:scrollbarStyle="outsideOverlay"
+                        android:id="@+id/grid"
+                        android:padding="@dimen/grid_padding"
+                        android:fadingEdgeLength="0.0dip"
+                        android:clipToPadding="false"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:listSelector="@drawable/card_selector"
+                        android:drawSelectorOnTop="true"
+                        android:cacheColorHint="@android:color/transparent"
+                        android:horizontalSpacing="@dimen/grid_spacing"
+                        android:verticalSpacing="@dimen/grid_spacing"
+                        android:requiresFadingEdge="none"/>
+            </FrameLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+    <ViewStub
+            android:id="@+id/coachmark1"
+            android:layout="@layout/coachmark1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"/>
+
+    <ViewStub
+            android:id="@+id/coachmark2"
+            android:layout="@layout/coachmark2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"/>
+</FrameLayout>

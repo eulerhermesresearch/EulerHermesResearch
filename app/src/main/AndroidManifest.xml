@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+        package="com.eulerhermes.research">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+
+    <permission
+            android:name="com.eulerhermes.research.gcm.permission.C2D_MESSAGE"
+            android:protectionLevel="signature"/>
+    <uses-permission android:name="com.eulerhermes.research.gcm.permission.C2D_MESSAGE"/>
+    <application
+            android:usesCleartextTraffic="true"
+            android:allowBackup="true"
+            android:icon="@drawable/ic_launcher"
+            android:label="@string/app_name"
+            android:logo="@drawable/ic_app_logo_min"
+            android:name="com.eulerhermes.research.app.EulerHermesApplication"
+            android:theme="@style/EulerHermesTheme"
+            tools:ignore="GoogleAppIndexingWarning">
+        <activity
+                android:configChanges="keyboardHidden|locale|orientation|screenSize"
+                android:label="@string/app_name"
+                android:launchMode="singleTop"
+                android:logo="@drawable/ic_app_logo"
+                android:name="com.eulerhermes.research.app.SplashscreenActivity"
+                android:theme="@style/EulerHermesTheme.Splashscreen"
+                android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+                android:configChanges="keyboardHidden|locale|orientation|screenSize"
+                android:name="com.eulerhermes.research.app.TermsActivity"/>
+        <activity
+                android:configChanges="keyboardHidden|locale|orientation|screenSize"
+                android:name="com.eulerhermes.research.app.MainActivity"/>
+        <activity
+                android:configChanges="keyboardHidden|locale|orientation|screenSize"
+                android:name="com.eulerhermes.research.app.CategoryActivity"
+                android:parentActivityName="com.eulerhermes.research.app.MainActivity"/>
+        <activity
+                android:name="com.eulerhermes.research.app.WebActivity"
+                android:parentActivityName="com.eulerhermes.research.app.MainActivity"/>
+        <activity
+                android:name="com.eulerhermes.research.app.ContactActivity"
+                android:parentActivityName="com.eulerhermes.research.app.MainActivity"/>
+        <activity
+                android:name="com.eulerhermes.research.app.LoginActivity"
+                android:parentActivityName="com.eulerhermes.research.app.MainActivity"/>
+        <activity
+                android:name="com.eulerhermes.research.app.ProfileActivity"
+                android:parentActivityName="com.eulerhermes.research.app.MainActivity"/>
+        <activity
+                android:configChanges="keyboardHidden|locale|orientation|screenSize"
+                android:name="com.eulerhermes.research.app.LinkedInLoginActivity"
+                android:parentActivityName="com.eulerhermes.research.app.MainActivity"/>
+        <activity
+                android:configChanges="keyboardHidden|locale|orientation|screenSize"
+                android:hardwareAccelerated="true"
+                android:name="com.artifex.mupdfdemo.MuPDFActivity"
+                android:parentActivityName="com.eulerhermes.research.app.MainActivity"/>
+        <activity
+                android:configChanges="keyboardHidden|locale|orientation|screenSize"
+                android:name="com.eulerhermes.research.app.VideoActivity"
+                android:parentActivityName="com.eulerhermes.research.app.MainActivity"/>
+        <activity
+                android:configChanges="keyboardHidden|locale|orientation|screenSize"
+                android:name="com.eulerhermes.research.app.RiskMapActivity"
+                android:parentActivityName="com.eulerhermes.research.app.MainActivity"/>
+        <activity
+                android:configChanges="keyboardHidden|locale|orientation|screenSize"
+                android:name="com.eulerhermes.research.app.InfographicsActivity"
+                android:parentActivityName="com.eulerhermes.research.app.MainActivity"/>
+        <activity
+                android:configChanges="keyboardHidden|locale|orientation|screenSize"
+                android:name="com.eulerhermes.research.app.ReportsActivity"
+                android:parentActivityName="com.eulerhermes.research.app.MainActivity"/>
+
+        <service
+                android:exported="false"
+                android:name="com.octo.android.robospice.Jackson2GoogleHttpClientSpiceService"/>
+        <service
+                android:exported="false"
+                android:name="com.eulerhermes.research.network.rest.rss.RssSpiceService"/>
+        <service
+                android:exported="false"
+                android:name="com.eulerhermes.research.network.FileSpiceService"/>
+        <service
+                android:exported="false"
+                android:name="com.eulerhermes.research.network.DatabaseSpiceService"/>
+
+        <provider
+                android:authorities="com.eulerhermes.research"
+                android:exported="false"
+                android:name="com.eulerhermes.research.provider.EHContentProvider"/>
+        <!--<receiver-->
+                <!--android:name="com.eulerhermes.research.gcm.GcmBroadcastReceiver"-->
+                <!--android:permission="com.google.android.c2dm.permission.SEND">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="com.google.android.c2dm.intent.RECEIVE"/>-->
+                <!--<category android:name="com.eulerhermes.research"/>-->
+            <!--</intent-filter>-->
+        <!--</receiver>-->
+        <!--<service android:name="com.eulerhermes.research.gcm.GcmIntentService"/>-->
+
+        <service android:name=".gcm.PushService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+                android:name="com.google.android.gms.version"
+                android:value="@integer/google_play_services_version"/>
+        <meta-data
+                android:name="com.crashlytics.ApiKey"
+                android:value="${crashlytics_api_key}"/>
+    </application>
+</manifest>

@@ -1,0 +1,66 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    
+    <dimen name="dip_1">1dip</dimen>
+    <dimen name="dip_2">2dip</dimen>
+    <dimen name="dip_4">4dip</dimen>
+    <dimen name="dip_8">8dip</dimen>
+    <dimen name="dip_12">12dip</dimen>
+    <dimen name="dip_16">16dip</dimen>
+    <dimen name="dip_24">24dip</dimen>
+    <dimen name="dip_32">32dip</dimen>
+    <dimen name="dip_36">36dip</dimen>
+    <dimen name="dip_40">40dip</dimen>
+    <dimen name="dip_48">48dip</dimen>
+    <dimen name="dip_56">56dip</dimen>
+    <dimen name="dip_64">64dip</dimen>
+    <dimen name="dip_72">72dip</dimen>
+    <dimen name="dip_96">96dip</dimen>
+    <dimen name="dip_128">128dip</dimen>
+    <dimen name="dip_144">144dip</dimen>
+    
+    <dimen name="max_drawer_layout_width">320dp</dimen>
+    <dimen name="drawer_layout_item_height">@dimen/dip_56</dimen>
+    <dimen name="drawer_layout_item_text_size">18sp</dimen>
+    
+    <dimen name="grid_padding">@dimen/dip_8</dimen>
+    <dimen name="grid_spacing">@dimen/dip_8</dimen>
+    
+    <dimen name="default_spacing_major">16dp</dimen>
+    <dimen name="default_spacing_minor">8dp</dimen>
+    <dimen name="default_spacing_micro">4dp</dimen>
+    
+    <dimen name="base_dip_1">1dip</dimen>
+    <dimen name="base_dip_2">2dip</dimen>
+    <dimen name="base_dip_4">4dip</dimen>
+    <dimen name="base_dip_8">8dip</dimen>
+    <dimen name="base_dip_12">12dip</dimen>
+    <dimen name="base_dip_16">16dip</dimen>
+
+    <dimen name="team_image_width">160dip</dimen>
+    <dimen name="team_image_height">129dip</dimen>
+    
+    <dimen name="tab_host_default_height">48dp</dimen>
+    
+    <dimen name="profile_dialog_width">300dp</dimen>
+    <dimen name="profile_dialog_height">280dp</dimen>
+    
+    <dimen name="login_dialog_width">340dp</dimen>
+    <dimen name="wide_layout_max_width">500dp</dimen>
+    
+    <!-- CGU / Country dialog -->
+    <dimen name="max_dialog_width">300dp</dimen>
+    <dimen name="max_dialog_height">460dp</dimen>
+    
+    <bool name="isTablet">false</bool>
+    
+    <dimen name="search_coachmark_margin">24dp</dimen>
+    <dimen name="dialog_max_height">300dp</dimen>
+
+    <dimen name="home_top_bar">48dp</dimen>
+    <dimen name="home_header_text_size">16sp</dimen>
+
+</resources>
