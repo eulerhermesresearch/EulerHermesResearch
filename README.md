@@ -1,5 +1,6 @@
 # EulerHermesResearch
-https://github.com/nubytouch/EulerHermesResearch/edit/master/ReadMe.txt
+
+https://github.com/eulerhermesresearch/EulerHermesResearch/README.md
 
 This is the code source for the old Euler Hermes Research Android application
 
