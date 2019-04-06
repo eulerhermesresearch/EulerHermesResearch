@@ -1,6 +1,6 @@
 # EulerHermesResearch
 
-EulerHermesResearch APK This is the code source for the old Euler Hermes Research Android application version 3.0, Euler Hermes APK is free of use a new version without mupdf-android-viewer-old code is available on the play store
+EulerHermesResearch APK This is the code source for the old Euler Hermes Research Android application version 3.0, Euler Hermes APK is free of use, a new version without mupdf-android-viewer-old code is available on the play store
 
 LICENSE
 =======
